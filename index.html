@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="div">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="input" id="InputA" onfocus="SelectInput('InputA')">
+                    <input type="text" class="input" id="InputB" onfocus="SelectInput('InputB')">
+                    <input type="text" class="input" id="InputResult" onfocus="SelectInput('InputResult')" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn" value="7" onclick="AssignNumber('7')">
+                    <input type="button" class="btn" value="8" onclick="AssignNumber('8')">
+                    <input type="button" class="btn" value="9" onclick="AssignNumber('9')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn" value="4" onclick="AssignNumber('4')">
+                    <input type="button" class="btn" value="5" onclick="AssignNumber('5')">
+                    <input type="button" class="btn" value="6" onclick="AssignNumber('6')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn" value="1" onclick="AssignNumber('1')">
+                    <input type="button" class="btn" value="2" onclick="AssignNumber('2')">
+                    <input type="button" class="btn" value="3" onclick="AssignNumber('3')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn" value="+" onclick="Add()">
+                    <input type="button" class="btn" value="0" onclick="AssignNumber('0')">
+                    <input type="button" class="btn" value="-" onclick="Sub()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn" value="*" onclick="Mult()">
+                    <input type="button" class="btn" value="Clean" onclick="Clean()">
+                    <input type="button" class="btn" value="/" onclick="Div()">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
